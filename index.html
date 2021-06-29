@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeRF-Tex</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+    <header>
+        <h1>NeRF-Tex: Neural Reflectance Field Textures</h1>
+        <p>Hendrik Baatz<sup>1,2</sup>, Jonathan Granskog<sup>2</sup>, Marios Papas<sup>3</sup>, Fabrice Rousselle<sup>2</sup>, Jan Nov&aacute;k<sup>2</sup></p>
+        <p><sup>1</sup>ETH Z&uuml;rich, <sup>2</sup>NVIDIA, <sup>3</sup>Disney Research|Studios</p>
+        <nav>
+            <a href="https://jannovak.info/publications/NeRFTex/NeRFTex.pdf">Paper</a>
+            <a href="https://github.com/hbaatz/nerf-tex/">Code</a>
+            <!-- <a href="">Datasets</a> -->
+        </nav>      
+    </header>
+
+    <main>
+        <img alt="Method overview" src="assets/images/instanced.JPG" style="margin-top:1cm"/>
+        <p>We investigate the use of neural fields for modeling diverse mesoscale structures, such as fur, fabric, and grass.
+            Instead of using classical graphics primitives to model the structure, we propose to employ a versatile volumetric primitive represented by a neural <em>reflectance</em> field (NeRF-Tex), which jointly models the geometry of the material and its response to lighting.
+            The NeRF-Tex primitive can be instantiated over a base mesh to <q>texture</q> it with the desired meso and microscale appearance.
+            We condition the reflectance field on user-defined parameters that control the appearance.
+            A single NeRF texture thus captures an entire space of reflectance fields rather than one specific structure.
+            This increases the gamut of appearances that can be modeled and provides a solution for combating repetitive texturing artifacts.
+            We also demonstrate that NeRF textures naturally facilitate continuous level-of-detail rendering.
+            Our approach unites the versatility and modeling power of neural networks with the artistic control needed for precise modeling of virtual scenes.
+            While all our training data is currently synthetic, our work provides a recipe that can be further extended to extract complex, hard-to-model appearances from real images.
+        </p>
+
+        <h2>Paper Video</h2>
+        <video controls>
+            <source src="https://jannovak.info/publications/NeRFTex/NeRFTex_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Bibtex</h2>
+<pre>
+<code>
+@inproceedings{baatz2021nerftex,
+title        = { NeRF-Tex: Neural Reflectance Field Textures },
+author       = { Baatz, Hendrik and Granskog, Jonathan and Papas, Marios and Rousselle, Fabrice and Nov\'{a}k, Jan },
+booktitle    = { Eurographics Symposium on Rendering },
+year         = { 2021 },
+month        = { June },
+publisher    = { The Eurographics Association }
+}
+</code>
+</pre>
+    </main>
+</body>
+</html>
