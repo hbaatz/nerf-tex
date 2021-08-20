@@ -1,0 +1,12 @@
+[submodule "instancer/submodules/libigl"]
+	path = instancer/submodules/libigl
+	url = https://github.com/libigl/libigl.git
+[submodule "instancer/submodules/eigen"]
+	path = instancer/submodules/eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "instancer/submodules/stb"]
+	path = instancer/submodules/stb
+	url = https://github.com/nothings/stb.git
+[submodule "instancer/submodules/json"]
+	path = instancer/submodules/json
+	url = https://github.com/nlohmann/json.git
